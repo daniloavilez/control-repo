@@ -12,4 +12,5 @@ mod 'tomcat',
   :git    => 'https://github.com/daniloavilez/puppet-module-tomcat.git'
 #  :commit => 'de290646f97e04b4b8e42c70f6e01e860c394ce7'
 
-
+mod 'java', 
+  :git    => 'https://github.com/daniloavilez/puppet-module-java.git'
