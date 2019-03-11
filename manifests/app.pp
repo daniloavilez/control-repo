@@ -1,12 +1,10 @@
+hiera_include('classes')
+
 node 'node3' {
   
-  include base
+  # include base
 
-  class { '::tomcat': 
-    user => 'tomcat',
-    group => 'tomcat',
-    service_state => 'running'
-  }
+  include tomcat
 
   tomcat::deploy { "sysfoo":
     deploy_url => 'https://11-174440744-gh.circle-artifacts.com/0/home/circleci/repo/target/sysfoo.war',
