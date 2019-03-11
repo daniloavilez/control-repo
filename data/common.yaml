@@ -1,2 +1,10 @@
 ---
 message: "This node is using common data"
+tomcat::user: 'tomcat'
+tomcat::group: 'tomcat'
+tomcat::service_state: running
+classes:
+  - ntp
+
+# tomcat::deploy_url: "https://11-174440744-gh.circle-artifacts.com/0/home/circleci/repo/target/sysfoo.war"
+# tomcat::checksum_value: '0ba945b10be51e5d15cf0a178245727a'

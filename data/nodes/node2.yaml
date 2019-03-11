@@ -1,0 +1,7 @@
+---
+message: "This node is using common data"
+tomcat::user: 'tomcat'
+tomcat::group: 'tomcat'
+tomcat::service_state: stopped
+classes:
+  - ntp
